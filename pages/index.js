@@ -1,6 +1,14 @@
 import Head from 'next/head'
 
+
 export default function Home() {
+
+  console.log("env var", process.env.DB_HOST)
+
+
+
+  console.log(process.env.NEXT_PUBLIC_ANALYTICS_ID)
+
   return (
     <div className="container">
       <Head>
@@ -10,7 +18,7 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Learn to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className="description">
